@@ -1,1 +1,1 @@
-web: pm2 start bin/bot.js
+web: forever bin/bot.js

@@ -1,12 +1,11 @@
 {
   "name": "pixleebot",
   "version": "1.0.0",
-"description": "Pixlee Collection Bot for Pixlee Internal. Original code written by Kyle Asaff for Gordon Ramsay app which was used as inspiration / boilerplate.",
+  "description": "Pixlee Collection Bot for Pixlee Internal. Original code written by Kyle Asaff for Gordon Ramsay app which was used as inspiration / boilerplate.",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm i -g pm2",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start bin/bot.js"
+    "start": "forever bin/bot.js"
   },
   "repository": {
     "type": "git",
@@ -15,8 +14,9 @@
   "author": "Kyle Asaff + Awad Sayeed",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.4.6",
+    "forever": "^0.15.2",
     "request": "^2.67.0",
-    "slackbots": "^0.5.1",
-    "aws-sdk": "^2.4.6"
+    "slackbots": "^0.5.1"
   }
 }
