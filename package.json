@@ -1,0 +1,21 @@
+{
+  "name": "pixleebot",
+  "version": "1.0.0",
+  "description": "Pixlee Collection Bot for Pixlee Internal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pixlee/pixlee-bot"
+  },
+  "author": "Kyle Asaff originally + Awad Sayeed later",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.67.0",
+    "slackbots": "^0.5.0",
+    "aws-sdk": "^2.4.6"
+  }
+}
