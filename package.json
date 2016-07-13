@@ -4,8 +4,9 @@
 "description": "Pixlee Collection Bot for Pixlee Internal. Original code written by Kyle Asaff for Gordon Ramsay app which was used as inspiration / boilerplate.",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npm i -g pm2",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/bot.js"
+    "start": "pm2 start bin/bot.js"
   },
   "repository": {
     "type": "git",

@@ -1,1 +1,1 @@
-web: node bin/bot.js
+web: pm2 bin/bot.js
