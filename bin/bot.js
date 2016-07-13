@@ -18,7 +18,7 @@ http.createServer(function (request, response) {
 }).listen(process.env.PORT || 5000)
 
 // let's start our bot!
-var pixleebot = new PixleeBot({
+var bot = new PixleeBot({
     token: 			token,
     name: 			name,
     aws_bucket: 	aws_bucket,
@@ -27,4 +27,4 @@ var pixleebot = new PixleeBot({
     pixlee_secret: 	pixlee_secret
 });
 
-pixleebot.run();
+bot.run();
